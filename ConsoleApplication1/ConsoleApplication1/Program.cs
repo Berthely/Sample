@@ -10,9 +10,12 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Hola Joven");
-            Console.ReadLine();
+            Ejercicio_1 nuevo = new Ejercicio_1();
+            nuevo.Imprimir();
 
+
+            Console.ReadLine();
+            
         }
     }
 }
