@@ -18,8 +18,6 @@ namespace Numero
 
             string alumnos2;
             alumnos2= alumnos;
-            
-
 
             Console.WriteLine(alumnos);
             Console.ReadLine();
@@ -31,10 +29,12 @@ namespace Numero
             int i;
             int j;
             int res;
-            //res = j * j;
-                     
-            Console.WriteLine("Imprime student" + student);
-                        
+            int x;
+
+            x = Int32.Parse(alumnos2);
+            res = (x * x);
+                                 
+            Console.WriteLine("Imprime student" + student);                        
             Console.WriteLine("La longitud de alumnos es " );
 
             for (i = 0, j=0; i < alumnos.Length; i++,j++)
@@ -44,8 +44,10 @@ namespace Numero
 
                 if(char.IsNumber(alumnos[i]))
                 {
-                 //   Console.WriteLine( res);
-                   // j = i;
+
+                 Console.WriteLine(res);
+
+                 j = i;
 
                 }
 

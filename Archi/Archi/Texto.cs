@@ -14,37 +14,64 @@ namespace Texto
         {
             string frase;
             string buscar;
-            int i;
-            int j;
-            int w;
-            frase = "perro que come huevo";
-            buscar = "huevo";
-                            
             
+            int x;
+            int z;
+            
+            frase = "el baile del la mona sensual";
+            buscar = "baile";
+
+
             Console.WriteLine("Programa que indica la posicion de la palabra");
             Console.WriteLine();
             Console.ReadLine();
 
-            for (i=0; i<frase.Length; i++)
+            //escribe la frase completa letra por letra
+            
+            Console.Write("La frase a buscar es      :");
+            for (x = 0; x < frase.Length; x++)
 
-            Console.Write(frase[i] + " ");
+            Console.Write(frase[x]);
             Console.WriteLine();
             Console.ReadLine();
-
-            for (j=0; j<buscar.Length; j++)
-            Console.Write(buscar[j]+" ");
-            Console.ReadLine();
-                     
-            for (w=0; w<=buscar.Length; w++)                
-                    if (buscar[w] == frase[w])
-
-                    {                                                
-                        Console.WriteLine(frase[w]);
-                        Console.ReadLine();
-                    }
-                
             
+            //escribe la palabra a buscar letra por letra
+
+            Console.Write("La palabra a buscar es    :");
+            for (z = 0; z < buscar.Length; z++)
+            
+            Console.Write(buscar[z]);
+            Console.WriteLine();
+            Console.ReadLine();
+            
+            int bus = buscar.Length;
+            int fra = frase.Length;
+            int i=0;
+            int j = 0;
+            int y = i;
+
+            
+            for (i = 0, j = 0; i < frase.Length; i++)
+
+                if ((frase[i] == buscar[j]) && (j == bus))
+
+                {
+                    j++;
+                    Console.Read();
+                    Console.WriteLine(j);
+
+                }
+
+                    
+            
+            Console.ReadLine();
+            Console.WriteLine("Fin");
+            Console.ReadLine();
+
+
         }
+
 
     }
 }
+
