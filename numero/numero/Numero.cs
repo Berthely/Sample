@@ -27,39 +27,34 @@ namespace Numero
             char[] student=alumnos.ToArray();
             
             int i;
-            int j;
             int res;
-            int x;
-
-            x = Int32.Parse(alumnos2);
-            res = (x * x);
-                                 
+            int x;          
+                                
             Console.WriteLine("Imprime student" + student);                        
             Console.WriteLine("La longitud de alumnos es " );
 
-            for (i = 0, j=0; i < alumnos.Length; i++,j++)
+            for (i = 0; i < alumnos.Length; i++)
             {
-                
-                Console.WriteLine(char.IsNumber(alumnos[i]) +" " + i);
+                Console.WriteLine(char.IsNumber(alumnos[i]) + " " + i);
 
-                if(char.IsNumber(alumnos[i]))
+                if (char.IsNumber(alumnos[i]))
                 {
-
-                 Console.WriteLine(res);
-
-                 j = i;
-
+                    Console.WriteLine(alumnos[i]);
+                    alumnos = alumnos2;
+                    Console.WriteLine("imprimiendo alumnos2   :" + alumnos2[i]);
+                    Console.ReadLine();
+                    
+                    //x = Int32.Parse(alumnos2);
+                    
+                    Convert.ToInt32(alumnos2);
+                    x = alumnos2;
+                    res = (x * x);
+                    Console.WriteLine(res);                    
                 }
-
+                
                 Console.ReadLine();
-            }
-
-
-
-        
+            }        
         }
-
-
 
     }
 }
