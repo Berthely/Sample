@@ -8,6 +8,7 @@ namespace ConsoleApplication1
     class Ejercicio_1
     {
         public void Imprimir()
+
         {                                          
             Console.WriteLine();
                               
